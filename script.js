@@ -1,18 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll("nav ul li a");
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+const navLinks = document.querySelectorAll('.nav a');
+const year = document.getElementById('year');
 
-    for (const link of links) {
-        link.addEventListener("click", smoothScroll);
-    }
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
-    function smoothScroll(event) {
-        event.preventDefault();
-        const targetId = event.currentTarget.getAttribute("href").substring(1);
-        const targetSection = document.getElementById(targetId);
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
 
-        window.scrollTo({
-            top: targetSection.offsetTop - 60, // Offset for the fixed navbar
-            behavior: "smooth"
-        });
-    }
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+  });
 });

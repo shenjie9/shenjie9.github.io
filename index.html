@@ -1,99 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jie Shen | Mathematics, Statistics, and Computer Science student at the University of Toronto building projects in data science, software engineering, and machine learning." />
+  <title>Jie Shen | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Jie Shen</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navigation Bar -->
-    <nav id="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Sections -->
-    <section id="home">
-        <h1>Welcome to My Website</h1>
-        <p>Hi, my name is Jie Shen. Welcome to my personal website!</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Math • Statistics • Computer Science</p>
+          <h1>Building thoughtful, data-driven software.</h1>
+          <p class="hero-text">
+            I'm Jie Shen, a University of Toronto student interested in data science, machine learning,
+            software engineering, and quantitative problem solving.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+          </div>
+          <div class="quick-links">
+            <a href="mailto:jie22shen@gmail.com">jie22shen@gmail.com</a>
+            <span>•</span>
+            <a href="https://github.com/shenjie9" target="_blank" rel="noopener">GitHub</a>
+            <span>•</span>
+            <a href="https://www.linkedin.com/in/jie-shen-0b37a9277/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <p class="hero-card-label">Currently</p>
+          <ul>
+            <li>4th-year student at UTM</li>
+            <li>Majors in Mathematics & Statistics</li>
+            <li>Minor in Computer Science</li>
+            <li>Seeking internships in data science / SWE / ML</li>
+          </ul>
+        </aside>
+      </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a highly motivated, detail-oriented 3rd-year student at the University 
-            of Toronto, Mississauga campus pursuing an Honours Bachelor of Science in 
-            Mathematics, Statistics, and Computer Science. I am seeking an internship in data 
-            science, software engineering or computer science.
-        
-            
-            My interest in machine learning stems from its transformative potential to uncover 
-            insights and drive intelligent decision-making across diverse fields. As a mathematics 
-            and statistics student with a minor in computer science, I've developed a strong 
-            foundation in analytical thinking, probability, and algorithms—key components of 
-            machine learning. The ability to leverage vast data sets to solve complex, real-world 
-            problems fascinates me, as it aligns with my passion for both quantitative analysis and 
-            technology.
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>A quantitative student who likes turning ideas into working systems.</h2>
+        </div>
+        <div>
+          <p>
+            I study Mathematics and Statistics with a minor in Computer Science at the University of Toronto Mississauga.
+            My academic background has given me a strong foundation in analytical thinking, algorithms, probability, and data analysis.
+          </p>
+          <p>
+            I enjoy building projects that combine technical depth with practical usefulness, especially systems involving simulation,
+            visualization, object-oriented design, and intelligent decision making. I am currently looking for opportunities where I can
+            continue growing as a developer while applying quantitative skills to real problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+          <p class="section-intro">A few projects that reflect my interests in software design, algorithms, and data-focused systems.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Simulation</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+            <h3>Ride-Sharing Simulation</h3>
+            <p>
+              Built a rider-driver simulation for a grid-based city using an event-driven architecture. Used priority queues to manage event
+              scheduling and collected metrics such as rider wait time, driver idle time, and trip distance for performance analysis.
+            </p>
+            <ul>
+              <li>Event-driven system design</li>
+              <li>Priority queue scheduling</li>
+              <li>Statistical metric collection and analysis</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Pygame</span>
+              <span class="tag">JSON</span>
+            </div>
+            <h3>Mobile Call Data Management & Visualization</h3>
+            <p>
+              Designed a call tracking and billing system using object-oriented programming, then visualized call activity across Toronto.
+              The system handled customer records, contract logic, and large JSON datasets.
+            </p>
+            <ul>
+              <li>Inheritance and composition</li>
+              <li>Data parsing and contract logic</li>
+              <li>Interactive geographic visualization</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Visualization</span>
+              <span class="tag">Recursion</span>
+            </div>
+            <h3>Interactive Treemap Visualization Tool</h3>
+            <p>
+              Created an interactive treemap system for hierarchical datasets such as file systems and categorized research data. The tool
+              scaled nodes dynamically and supported multiple data sources.
+            </p>
+            <ul>
+              <li>Recursive data structures</li>
+              <li>Real-time rendering with Pygame</li>
+              <li>Exploratory analysis through visualization</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <div class="tag-row">
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+              <span class="tag">JUnit</span>
+            </div>
+            <h3>Othello Game Engine with AI Strategies</h3>
+            <p>
+              Engineered a modular Othello game engine supporting human and AI play. Implemented Greedy and Random strategies and used JUnit
+              testing to verify correctness and edge-case behavior.
+            </p>
+            <ul>
+              <li>Strategy pattern and modular design</li>
+              <li>AI decision logic</li>
+              <li>Testing-focused development</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-label">Skills</p>
+            <h2>Technical toolkit</h2>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="card">
+            <h3>Languages</h3>
+            <p>Python, Java, JavaScript, HTML, CSS, R, SQL</p>
+          </div>
+          <div class="card">
+            <h3>Tools</h3>
+            <p>Git, JUnit, Pytest, Power BI, Excel, NumPy, Matplotlib, Pygame</p>
+          </div>
+          <div class="card">
+            <h3>Strengths</h3>
+            <p>Object-oriented design, data analysis, algorithms, visualization, quantitative modeling</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-card card">
+        <p class="section-label">Contact</p>
+        <h2>Let's connect.</h2>
+        <p>
+          I am currently looking for internship, research, and project opportunities in data science, software engineering,
+          and machine learning.
         </p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:jie22shen@gmail.com">Email Me</a>
+          <a class="btn btn-secondary" href="https://github.com/shenjie9" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/jie-shen-0b37a9277/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Rider-Driver UBER Interface 
-                <ul>
-                    <li>Developed a ride-sharing simulation using Python to model ride allocation in a grid-based city.</li>
-                    <li>Implemented an event-driven architecture leveraging priority queues to manage event scheduling and execution.</li>
-                    <li>Employed data collection and analysis framework within the simulation, capturing detailed metrics like rider wait
-                        times, driver idle periods, and trip distances, facilitating statistical analysis and performance optimization.</li> 
-                    <li>Applied object-oriented design principles, ensuring modularity, scalability, and re-usability of core components.</li>
-                </ul>
-            </li>
-            <li>Mobile Call Data Management and Visualization System
-                <ul>
-                    <li>Designed and implemented a mobile call tracking system using object-oriented modules and principles of inheritance 
-                        and composition to manage customer data, call events, and billing information.</li>
-                    <li>Applied data parsing techniques to process large datasets in JSON format and implemented algorithms to handle various 
-                        contract types, ensuring accurate customer billing and contract management.</li>
-                    <li>Integrated a visualization tool using Pygame to map call activity onto a geographic representation of Toronto,
-                        allowing users to explore customer calling patterns and network coverage interactively
-                    </li>
-                </ul>
-            </li>
-            <li>Interactive Treemap Visualization Tool for Hierarchical Data Representation
-                <ul>
-                    <li>Engineered an interactive treemap visualization tool to model and analyze hierarchical data structures, such as file
-                        systems and categorized research datasets.</li>
-                    <li>Employed Pygame to render dynamic, real-time visualizations, proportionally scaling data nodes based on their
-                        size, and offering users an intuitive, interactive interface</li>
-                    <li>Extended the system to support multiple datasets, including both file system visualizations and research paper
-                        categorizations, demonstrating versatility in handling complex hierarchical data models.</li>
-                </ul>
-            </li>
-            <li>Modular Othello Game Engine with AI-Based Decision Models
-                <ul>
-                    <li>Engineered a modular Othello game engine supporting both human and AI players, with a focus on maintainable
-                        and extensible design using object-oriented principles and Strategy design pattern</li>
-                    <li>Developed automated decision-making algorithms for AI players, implementing Greedy and Random strategies to
-                        simulate competitive gameplay and enable various match configurations</li>
-                    <li>Integrated rigorous JUnit testing protocols, achieving thorough test coverage and ensuring alignment with project
-                        specifications and edge-case handling, resulting in a robust codebase</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Jie Shen</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:jie22shen@gmail.com">jie22shen@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/in/jie-shen-0b37a9277/" target="_blank">LinkedIn Profile</a></p>
-    </section>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
