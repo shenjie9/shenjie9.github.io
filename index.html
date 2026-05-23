@@ -61,7 +61,7 @@
             <p class="section-label">Featured work</p>
             <h2>Selected projects</h2>
           </div>
-          <a class="text-link" href="all-projects.html">See all 8 projects →</a>
+          <a class="text-link" href="all-projects.html">See all projects →</a>
         </div>
 
         <div class="projects-grid">
@@ -77,46 +77,51 @@
           </article>
 
           <article class="project-card">
-            <p class="tag-row"><span>Python</span><span>ML</span><span>Feature Engineering</span><span>Evaluation</span></p>
-            <h3>Artwork Emotion Prediction Challenge</h3>
-            <p>Built a machine learning workflow for predicting artwork-related responses from survey-style numeric and text features.</p>
+            <p class="tag-row"><span>Python</span><span>Machine Learning</span><span>NLP</span><span>Gradient Descent</span></p>
+            <h3>ArtSense ML — Hybrid NLP &amp; Behavioral Classification Engine</h3>
+            <p>Built an end-to-end machine learning system that combines natural language processing and structured sentiment features to classify user responses to artwork using a custom multiclass prediction pipeline.</p>
             <ul>
-              <li>Cleaned mixed data types and engineered numeric/text features.</li>
-              <li>Compared model behavior using reproducible training and evaluation scripts.</li>
-              <li>Created visualizations to communicate feature distributions and results.</li>
+              <li>Implemented a multiclass logistic regression model from scratch using vectorized gradient descent, softmax activation, cross-entropy loss, and L2 regularization to strengthen understanding of ML internals.</li>
+              <li>Engineered a hybrid feature architecture by combining Bag-of-Words text representations with structured numerical sentiment features, allowing the model to leverage both semantic and behavioral signals.</li>
+              <li>Designed a complete preprocessing pipeline including text cleaning, regex-based tokenization, vocabulary generation, normalization, missing-value handling, and outlier processing for noisy survey data.</li>
+              <li>Developed a reusable end-to-end inference workflow with model persistence, serialized preprocessing statistics, and automated prediction functionality to separate training from deployment.</li>
+              <li>Conducted hyperparameter experiments across learning rate, regularization strength, vocabulary thresholds, and training iterations while generating performance visualizations to evaluate model behavior.</li>
+              <li>Refactored the original implementation into a modular ML architecture with isolated preprocessing, feature engineering, training, inference, and evaluation components to improve maintainability and scalability.</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <p class="tag-row"><span>Statistics</span><span>Data Collection</span><span>Regression</span><span>Report</span></p>
-            <h3>Full-Pipeline Statistical Report</h3>
-            <p>Completed a full statistical project from original data collection to final written analysis and interpretation.</p>
+            <p class="tag-row"><span>Python</span><span>Statistical Modeling</span><span>Machine Learning</span><span>Data Analytics</span></p>
+            <h3>Social Media Behaviour Analytics &amp; Predictive Modeling System</h3>
+            <p>Built an end-to-end analytics platform combining survey-based data collection, statistical inference, and predictive modeling to analyze relationships between social media usage and student well-being.</p>
             <ul>
-              <li>Designed the data collection process instead of relying only on a provided dataset.</li>
-              <li>Cleaned data, performed exploratory analysis, and applied statistical modeling.</li>
-              <li>Produced a polished report with methodology, limitations, and conclusions.</li>
+              <li>Designed data collection and preprocessing pipelines for participant survey responses and structured behavioural features.</li>
+              <li>Conducted EDA, hypothesis testing, ANOVA, and regression analysis to identify statistically significant behavioural patterns.</li>
+              <li>Built predictive models to estimate mental health impact and engagement outcomes using engineered features and model evaluation metrics.</li>
+              <li>Created visual dashboards and technical reports translating statistical findings into actionable insights.</li>
+              <li>Implemented reproducible analysis workflows supporting scalable experimentation and model comparison.</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <p class="tag-row"><span>Python</span><span>Simulation</span><span>Priority Queues</span><span>OOP</span></p>
-            <h3>Ride-Sharing Simulation</h3>
-            <p>Developed a grid-based rider-driver simulation using event-driven design to model dispatching and system performance.</p>
+            <p class="tag-row"><span>Python</span><span>Object-Oriented Design</span><span>Event-Driven Architecture</span><span>Data Analysis</span></p>
+            <h3>Ride-Sharing Dispatch Optimization Simulator</h3>
+            <p>Developed an event-driven ride-sharing simulation platform that models rider-driver interactions, evaluates dispatch behavior, and analyzes system performance through real-time metrics collection and optimization-focused experimentation.</p>
             <ul>
-              <li>Used priority queues to schedule ride requests, pickups, and trip completions.</li>
-              <li>Tracked rider wait time, driver idle time, and trip distance metrics.</li>
-              <li>Separated simulation state, events, riders, and drivers using OOP.</li>
+              <li>Implemented an event-driven simulation engine using a priority queue to process rider requests, driver availability, pickups, drop-offs, and cancellations chronologically.</li>
+              <li>Designed modular object-oriented components for riders, drivers, dispatchers, and event handlers, emphasizing scalability, maintainability, and separation of concerns.</li>
+              <li>Integrated a monitoring and analytics pipeline to capture operational metrics including rider wait times, driver utilization, trip distance, and total travel distance.</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <p class="tag-row"><span>Java</span><span>OOP</span><span>Strategy Pattern</span><span>JUnit</span></p>
-            <h3>Othello AI Game Engine</h3>
-            <p>Implemented a modular Othello game engine with human players, AI players, and maintainable strategy-based architecture.</p>
+            <p class="tag-row"><span>Java</span><span>Object-Oriented Design</span><span>Strategy Pattern</span><span>JUnit</span></p>
+            <h3>Othello Game Engine with AI Decision Systems</h3>
+            <p>Developed a modular Othello game engine in Java supporting human and AI gameplay through extensible object-oriented architecture and automated decision-making strategies.</p>
             <ul>
-              <li>Implemented legal move generation, board state updates, and game outcomes.</li>
-              <li>Created Greedy and Random AI decision strategies.</li>
-              <li>Used JUnit testing to verify game logic and edge cases.</li>
+              <li>Implemented core game mechanics including move validation, turn management, board-state updates, and dynamic piece-flipping logic according to Othello rules.</li>
+              <li>Applied the Strategy Design Pattern to decouple gameplay behavior from player implementations, enabling interchangeable Human, Random AI, and Greedy AI decision models.</li>
+              <li>Integrated JUnit testing and edge-case validation to ensure correctness of gameplay logic, move legality checks, and board-state transitions.</li>
             </ul>
           </article>
         </div>
