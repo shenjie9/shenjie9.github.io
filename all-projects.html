@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Projects | Jie Shen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Jie Shen</a>
+      <nav class="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Featured Projects</a>
+        <a href="all-projects.html">All Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="Resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Project archive</p>
+        <h1>All major projects</h1>
+        <p class="hero-text">A more detailed overview of my software engineering, data science, machine learning, simulation, and visualization projects.</p>
+        <a class="btn btn-secondary" href="index.html">← Back to Home</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-list">
+        <article class="project-detail card">
+          <p class="tag-row"><span>Python</span><span>RAG</span><span>LLMs</span><span>Vector Search</span></p>
+          <h2>AI Study Assistant / PDF Chatbot</h2>
+          <p>Built a study-focused document assistant that allows users to upload PDFs and ask questions about their contents. The system is structured around a retrieval-augmented generation workflow: documents are parsed, split into chunks, embedded, retrieved using similarity search, and passed into an LLM for grounded responses.</p>
+          <ul>
+            <li>Designed the pipeline around chunking strategy, embeddings, vector search, and document-grounded generation.</li>
+            <li>Focused on making source retrieval explainable so users can understand where answers come from.</li>
+            <li>Positioned the project as a modern applied AI system rather than a simple chatbot wrapper.</li>
+          </ul>
+        </article>
+
+        <article class="project-detail card">
+          <p class="tag-row"><span>Python</span><span>Machine Learning</span><span>Feature Engineering</span><span>Model Evaluation</span></p>
+          <h2>Artwork Emotion Prediction Challenge</h2>
+          <p>Developed a machine learning workflow for predicting responses related to artwork perception using a mix of numeric survey variables and text-based features. The project involved cleaning survey-style inputs, engineering features, training models, and analyzing predictive performance.</p>
+          <ul>
+            <li>Processed numeric and text data using Python, NumPy, Pandas, and custom preprocessing functions.</li>
+            <li>Experimented with classification models including logistic regression-style approaches and feature transformations.</li>
+            <li>Created supporting visualizations to better understand response distributions and model behavior.</li>
+          </ul>
+        </article>
+
+        <article class="project-detail card">
+          <p class="tag-row"><span>Statistics</span><span>Data Collection</span><span>Regression</span><span>Report Writing</span></p>
+          <h2>Full-Pipeline Statistical Report</h2>
+          <p>Completed a full statistical analysis project from original data collection through final reporting. Unlike projects based only on provided datasets, this project involved designing the data collection process, preparing the data, performing statistical analysis, and communicating findings in a structured report.</p>
+          <ul>
+            <li>Collected and cleaned original data before performing exploratory analysis.</li>
+            <li>Applied statistical modeling and interpretation to answer a research question.</li>
+            <li>Produced a polished report emphasizing methodology, limitations, results, and practical interpretation.</li>
+          </ul>
+        </article>
+
+        <article class="project-detail card">
+          <p class="tag-row"><span>Python</span><span>Simulation</span><span>Priority Queues</span><span>OOP</span></p>
+          <h2>Ride-Sharing Simulation</h2>
+          <p>Developed a ride-sharing simulation that models interactions between riders and drivers in a grid-based city. The system uses an event-driven architecture to schedule and process ride requests, driver movement, pickup events, and trip completion.</p>
+          <ul>
+            <li>Implemented priority queues to manage chronological event execution.</li>
+            <li>Tracked metrics such as rider wait time, driver idle time, trip distance, and system performance.</li>
+            <li>Used object-oriented design to separate riders, drivers, events, dispatch behavior, and simulation state.</li>
+          </ul>
+        </article>
+
+        <article class="project-detail card">
+          <p class="tag-row"><span>Java</span><span>OOP</span><span>Strategy Pattern</span><span>JUnit</span></p>
+          <h2>Othello AI Game Engine</h2>
+          <p>Engineered a modular Othello game engine supporting human players and AI strategies. The project emphasizes object-oriented design, game-state management, legal move generation, and automated decision-making.</p>
+          <ul>
+            <li>Implemented Human vs Human and Human vs Computer gameplay configurations.</li>
+            <li>Created Greedy and Random AI players using a strategy-based design.</li>
+            <li>Used JUnit tests to verify board logic, move validity, game outcomes, and edge cases.</li>
+          </ul>
+        </article>
+
+        <article class="project-detail card">
+          <p class="tag-row"><span>Python</span><span>Pygame</span><span>JSON</span><span>Data Visualization</span></p>
+          <h2>Mobile Call Data Management and Visualization System</h2>
+          <p>Designed a mobile call tracking and visualization system for managing customer data, call records, and billing-related information. The system parses structured JSON data and visualizes call activity geographically.</p>
+          <ul>
+            <li>Modeled customers, calls, contracts, and billing behavior using object-oriented design.</li>
+            <li>Processed large JSON datasets and implemented filtering tools for interactive exploration.</li>
+            <li>Used Pygame to map call activity onto a geographic representation of Toronto.</li>
+          </ul>
+        </article>
+
+        <article class="project-detail card">
+          <p class="tag-row"><span>Python</span><span>Pygame</span><span>Recursion</span><span>Hierarchical Data</span></p>
+          <h2>Interactive Treemap Visualization Tool</h2>
+          <p>Built an interactive treemap visualization tool for representing hierarchical datasets such as file systems and categorized research data. The visualization scales nested rectangles according to data size, making complex structures easier to explore.</p>
+          <ul>
+            <li>Implemented recursive algorithms for layout generation and proportional sizing.</li>
+            <li>Added interactive navigation and rendering using Pygame.</li>
+            <li>Supported multiple data sources, including file system and CSV-style hierarchical datasets.</li>
+          </ul>
+        </article>
+
+        <article class="project-detail card">
+          <p class="tag-row"><span>Python</span><span>scikit-learn</span><span>Ridge</span><span>Lasso</span><span>RMSE</span></p>
+          <h2>High-Dimensional Regression Modeling Challenge</h2>
+          <p>Built a reproducible high-dimensional regression workflow focused on model comparison, regularization, and generalization performance.</p>
+          <ul>
+            <li>Built an end-to-end machine learning pipeline for high-dimensional regression using Python and scikit-learn.</li>
+            <li>Implemented and compared OLS, Ridge, and Lasso regression models using cross-validation and RMSE evaluation.</li>
+            <li>Applied feature standardization and regularization techniques to improve generalization performance and reduce overfitting.</li>
+            <li>Developed a reproducible training/inference workflow with automated submission generation and model metadata tracking.</li>
+            <li>Reduced effective feature space from 112 predictors to 24 informative variables using L1 regularization.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
