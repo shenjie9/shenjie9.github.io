@@ -29,10 +29,10 @@
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">Math • Statistics • Computer Science</p>
-          <h1>Building thoughtful, data-driven software.</h1>
+          <h1>Building data-driven software and ML systems.</h1>
           <p class="hero-text">
             I'm Jie Shen, a University of Toronto student interested in data science, machine learning,
-            software engineering, and quantitative problem solving.
+            software engineering, AI systems, and quantitative problem solving.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -85,10 +85,67 @@
             <p class="section-label">Projects</p>
             <h2>Selected work</h2>
           </div>
-          <p class="section-intro">A few projects that reflect my interests in software design, algorithms, and data-focused systems.</p>
+          <p class="section-intro">Projects spanning AI, machine learning, data analysis, simulation, visualization, and object-oriented software design.</p>
         </div>
 
         <div class="projects-grid">
+          <article class="card project-card featured-project">
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Embeddings</span>
+              <span class="tag">LLM</span>
+            </div>
+            <h3>AI Study Assistant / PDF Chatbot</h3>
+            <p>
+              Building a retrieval-augmented generation study assistant that lets users upload PDFs, chunk documents,
+              create embeddings, retrieve relevant passages with vector search, and generate grounded answers.
+            </p>
+            <ul>
+              <li>PDF ingestion, chunking strategy, embeddings, and cosine similarity retrieval</li>
+              <li>Vector database pipeline for document search</li>
+              <li>Designed as a modern ML/AI portfolio project with practical user value</li>
+            </ul>
+          </article>
+
+          <article class="card project-card featured-project">
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Logistic Regression</span>
+              <span class="tag">NLP</span>
+            </div>
+            <h3>Artwork Emotion Prediction Challenge</h3>
+            <p>
+              Developed a machine learning pipeline for predicting emotional responses to artwork using numeric survey
+              features and text-based representations, with reusable preprocessing and model training code.
+            </p>
+            <ul>
+              <li>Implemented multiclass logistic regression with softmax and gradient descent</li>
+              <li>Built text preprocessing and bag-of-words feature extraction</li>
+              <li>Separated data cleaning, training, inference, and visualization for maintainability</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <div class="tag-row">
+              <span class="tag">R</span>
+              <span class="tag">Statistics</span>
+              <span class="tag">Survey Design</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+            <h3>Full-Pipeline Statistical Report</h3>
+            <p>
+              Completed a statistical analysis project from data collection through final reporting, including survey
+              design, data cleaning, exploratory analysis, inference, and communication of results.
+            </p>
+            <ul>
+              <li>Collected original data rather than relying only on a provided dataset</li>
+              <li>Produced a structured statistical report with analysis and interpretation</li>
+              <li>Practiced end-to-end research workflow and reproducible reporting</li>
+            </ul>
+          </article>
+
           <article class="card project-card">
             <div class="tag-row">
               <span class="tag">Python</span>
@@ -112,6 +169,7 @@
               <span class="tag">Python</span>
               <span class="tag">Pygame</span>
               <span class="tag">JSON</span>
+              <span class="tag">Pytest</span>
             </div>
             <h3>Mobile Call Data Management & Visualization</h3>
             <p>
@@ -148,6 +206,7 @@
               <span class="tag">Java</span>
               <span class="tag">OOP</span>
               <span class="tag">JUnit</span>
+              <span class="tag">AI Strategy</span>
             </div>
             <h3>Othello Game Engine with AI Strategies</h3>
             <p>
@@ -158,6 +217,24 @@
               <li>Strategy pattern and modular design</li>
               <li>AI decision logic</li>
               <li>Testing-focused development</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Estimation</span>
+              <span class="tag">Numerical Methods</span>
+            </div>
+            <h3>Estimator Challenge</h3>
+            <p>
+              Built and refined estimator code for a statistical learning challenge, focusing on correctness,
+              clean project structure, reproducible runs, and interview-ready explanations of the modeling pipeline.
+            </p>
+            <ul>
+              <li>Cleaned data processing and prediction workflow</li>
+              <li>Reviewed code structure for maintainability</li>
+              <li>Prepared project for stronger ML/data science resume positioning</li>
             </ul>
           </article>
         </div>
@@ -178,12 +255,12 @@
             <p>Python, Java, JavaScript, HTML, CSS, R, SQL</p>
           </div>
           <div class="card">
-            <h3>Tools</h3>
-            <p>Git, JUnit, Pytest, Power BI, Excel, NumPy, Matplotlib, Pygame</p>
+            <h3>Tools & Libraries</h3>
+            <p>Git, JUnit, Pytest, Power BI, Excel, NumPy, Pandas, SciPy, Matplotlib, Pygame</p>
           </div>
           <div class="card">
             <h3>Strengths</h3>
-            <p>Object-oriented design, data analysis, algorithms, visualization, quantitative modeling</p>
+            <p>Machine learning, object-oriented design, data analysis, algorithms, visualization, quantitative modeling</p>
           </div>
         </div>
       </div>
@@ -208,6 +285,7 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
+      <span>© <span id="year"></span> Jie Shen</span>
       <a href="#home">Back to top ↑</a>
     </div>
   </footer>

@@ -324,3 +324,16 @@ ul {
     align-items: flex-start;
   }
 }
+
+.featured-project {
+  border-color: rgba(157, 187, 255, 0.32);
+  background: linear-gradient(180deg, rgba(143, 180, 255, 0.1), rgba(255, 255, 255, 0.055));
+}
+
+.project-card p {
+  margin-top: 0.35rem;
+}
+
+.project-card ul {
+  margin-bottom: 0;
+}
