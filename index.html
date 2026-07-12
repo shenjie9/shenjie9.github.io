@@ -11,11 +11,11 @@
     <div class="container nav-wrap">
       <a class="brand" href="index.html">JS</a>
       <nav class="nav">
-        <a href="index.html">About</a>
-        <a href="#projects">Featured Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Featured Projects</a>
         <a href="all-projects.html">All Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -35,12 +35,13 @@
             <a class="btn btn-secondary" href="all-projects.html">View All Projects</a>
           </div>
         </div>
+
         <aside class="hero-card">
           <p class="card-label">Portfolio focus</p>
           <ul>
             <li>AI systems and retrieval-augmented applications</li>
+            <li>Object-oriented Java systems and extensible application design</li>
             <li>Machine learning pipelines and predictive modeling</li>
-            <li>Object-oriented Java systems and desktop applications</li>
             <li>Statistical learning, regression, and model evaluation</li>
           </ul>
         </aside>
@@ -59,72 +60,103 @@
 
         <div class="projects-grid">
           <article class="project-card featured">
-            <p class="tag-row"><span>RAG</span><span>FastAPI</span><span>Vector Search/FAISS</span><span>Embeddings</span><span>LLM Architecture</span></p>
+            <p class="tag-row">
+              <span>RAG</span>
+              <span>FastAPI</span>
+              <span>FAISS</span>
+              <span>Embeddings</span>
+              <span>LLM Architecture</span>
+            </p>
             <h3>AI Study Assistant / Retrieval-Augmented Learning System</h3>
             <p>
-              Engineered a modular Retrieval-Augmented Generation platform that allows users to query PDF lecture notes using semantic search,
+              Built a Retrieval-Augmented Generation platform that lets users query PDF lecture notes through semantic search,
               FAISS vector retrieval, and interchangeable local or cloud-based language model backends.
             </p>
             <ul>
-              <li>Developed an end-to-end RAG pipeline for extracting PDF content, chunking documents, generating embeddings, and retrieving relevant context.</li>
-              <li>Implemented cosine-similarity retrieval and FAISS vector search to improve contextual relevance during question answering.</li>
-              <li>Designed an abstract LLM provider architecture supporting both local Ollama/Llama 3.2 and cloud-based OpenAI backends.</li>
+              <li>Developed an end-to-end RAG pipeline for PDF extraction, document chunking, embedding generation, and context retrieval.</li>
+              <li>Implemented FAISS vector search with cosine-similarity retrieval to surface relevant document chunks before answer generation.</li>
+              <li>Designed an abstract LLM provider interface supporting both local Ollama/Llama 3.2 and OpenAI backends.</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <p class="tag-row"><span>Python</span><span>Machine Learning</span><span>NLP</span><span>Gradient Descent</span></p>
+            <p class="tag-row">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>NLP</span>
+              <span>Gradient Descent</span>
+              <span>Feature Engineering</span>
+            </p>
             <h3>Hybrid NLP &amp; Behavioral Classification Engine</h3>
             <p>
-              Designed an end-to-end machine learning system that combines natural language processing with structured behavioral survey features
+              Built a machine learning system that combines natural language processing with structured behavioral survey features
               to classify artwork responses through a custom multiclass prediction pipeline.
             </p>
             <ul>
-              <li>Implemented multiclass logistic regression from scratch using softmax activation, cross-entropy loss, vectorized gradient descent, and L2 regularization.</li>
-              <li>Built a hybrid feature architecture combining Bag-of-Words text representations with normalized numerical sentiment and behavioral features.</li>
-              <li>Separated preprocessing, feature engineering, training, inference, and evaluation into reusable components for maintainable experimentation.</li>
+              <li>Implemented multiclass logistic regression from scratch using softmax, cross-entropy loss, vectorized gradient descent, and L2 regularization.</li>
+              <li>Engineered hybrid features by combining Bag-of-Words text representations with normalized sentiment and behavioral variables.</li>
+              <li>Separated preprocessing, feature engineering, training, inference, and evaluation into reusable ML pipeline components.</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <p class="tag-row"><span>Java</span><span>JavaFX</span><span>Object-Oriented Design</span><span>MVC Architecture</span></p>
-            <h3>Interactive Canvas Drawing Application with Extensible Design Architecture</h3>
+            <p class="tag-row">
+              <span>Java</span>
+              <span>JavaFX</span>
+              <span>Object-Oriented Design</span>
+              <span>MVC-Style Architecture</span>
+              <span>Factory Pattern</span>
+            </p>
+            <h3>Interactive Canvas Drawing Application</h3>
             <p>
-              Created a JavaFX desktop drawing application with modular shape rendering, real-time user interaction,
-              file persistence, and extensible object-oriented architecture for creating and editing graphical content.
+              Created a JavaFX desktop drawing application for creating, editing, saving, and reloading graphical drawings through
+              an event-driven interface and extensible object-oriented architecture.
             </p>
             <ul>
-              <li>Designed the system using MVC-style architecture to separate rendering logic, application state, and user interaction handling.</li>
-              <li>Implemented a flexible JavaFX file persistence workflow allowing users to create, save, and reload multiple drawings through native file dialogs.</li>
-              <li>Applied inheritance, composition, and modular design patterns to support extensible drawing tools and reusable shape components.</li>
+              <li>Designed a 3-layer MVC-style architecture separating application state, rendering logic, and user input handling.</li>
+              <li>Implemented a polymorphic shape framework with factory-based creation for 8 drawing tools, including shapes, polylines, freehand sketches, and waves.</li>
+              <li>Built editing and persistence features including undo/redo, cut/copy/paste, custom .canvas save/load functionality, and light/dark display modes.</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <p class="tag-row"><span>Java</span><span>Object-Oriented Design</span><span>Strategy Pattern</span><span>JUnit</span></p>
+            <p class="tag-row">
+              <span>Java</span>
+              <span>Object-Oriented Design</span>
+              <span>Strategy Pattern</span>
+              <span>JUnit</span>
+              <span>Game AI</span>
+            </p>
             <h3>Othello Game Engine with AI Decision Systems</h3>
             <p>
-              Developed a modular Java Othello engine supporting human and AI gameplay through reusable player,
-              controller, and strategy abstractions.
+              Developed a modular Java Othello engine supporting human and AI gameplay through reusable game-state,
+              player, controller, and strategy abstractions.
             </p>
             <ul>
-              <li>Implemented core game mechanics including move validation, turn management, board-state updates, and piece-flipping logic.</li>
-              <li>Used the Strategy Pattern to support interchangeable Human, Random AI, and Greedy AI decision models without modifying the game engine.</li>
-              <li>Added JUnit tests for gameplay logic, legal moves, edge cases, and board-state transitions.</li>
+              <li>Implemented core game mechanics including legal move validation, turn management, board updates, score tracking, and piece-flipping logic.</li>
+              <li>Used the Strategy Pattern to support interchangeable Human, Random AI, and Greedy AI decision models.</li>
+              <li>Added JUnit tests for gameplay logic, legal moves, edge cases, game termination, and board-state transitions.</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <p class="tag-row"><span>Python</span><span>scikit-learn</span><span>Ridge</span><span>Lasso</span><span>RMSE</span></p>
+            <p class="tag-row">
+              <span>Python</span>
+              <span>scikit-learn</span>
+              <span>Ridge</span>
+              <span>Lasso</span>
+              <span>Elastic Net</span>
+              <span>RMSE</span>
+            </p>
             <h3>High-Dimensional Regression Modeling Pipeline</h3>
             <p>
               Constructed a reproducible machine learning workflow for high-dimensional regression, model comparison,
               regularization, feature selection, and generalization performance evaluation.
             </p>
             <ul>
-              <li>Implemented and compared OLS, Ridge, Lasso, and Elastic Net regression models using cross-validation and RMSE evaluation.</li>
-              <li>Applied feature standardization and regularization techniques to reduce overfitting in high-dimensional predictor spaces.</li>
-              <li>Built a reproducible experimentation pipeline with model evaluation outputs, coefficient analysis, and diagnostic visualizations.</li>
+              <li>Compared OLS, Ridge, Lasso, and Elastic Net models using cross-validation and RMSE-based evaluation.</li>
+              <li>Applied feature standardization and regularization to reduce overfitting across 112 input predictors.</li>
+              <li>Reduced the effective feature space from 112 predictors to 24 informative variables using L1-based feature selection.</li>
             </ul>
           </article>
         </div>
@@ -139,11 +171,27 @@
             <h2>Tools and coursework</h2>
           </div>
         </div>
+
         <div class="skills-grid">
-          <div class="card"><h3>Programming & Software Development</h3><p>Python, Java, JavaScript, HTML, CSS, SQL, R, Git/GitHub, Object-Oriented Design, MVC Architecture, JUnit</p></div>
-          <div class="card"><h3>Data & ML</h3><p>Pandas, NumPy, scikit-learn, FastAPI, FAISS, NLP, regression, classification, cross-validation, feature engineering, data analysis</p></div>
-          <div class="card"><h3>Algorithms & Computing</h3><p>Data structures, algorithms, recursion, graph algorithms, dynamic programming, optimization, event-driven systems, simulation design</p></div>
-          <div class="card"><h3>Mathematical & Statistical Foundations</h3><p>Discrete mathematics, probability, linear algebra, statistical inference, game theory, combinatorics, Bayesian statistics, regression analysis, mathematical proofs</p></div>
+          <div class="card">
+            <h3>Programming &amp; Software Development</h3>
+            <p>Python, Java, JavaFX, JavaScript, HTML, CSS, SQL, R, Git/GitHub, Object-Oriented Design, MVC-Style Architecture, JUnit</p>
+          </div>
+
+          <div class="card">
+            <h3>Data &amp; ML</h3>
+            <p>Pandas, NumPy, scikit-learn, FastAPI, FAISS, NLP, regression, classification, cross-validation, feature engineering, data analysis</p>
+          </div>
+
+          <div class="card">
+            <h3>Algorithms &amp; Computing</h3>
+            <p>Data structures, algorithms, recursion, graph algorithms, dynamic programming, optimization, event-driven systems, simulation design</p>
+          </div>
+
+          <div class="card">
+            <h3>Mathematical &amp; Statistical Foundations</h3>
+            <p>Discrete mathematics, probability, linear algebra, statistical inference, game theory, combinatorics, Bayesian statistics, regression analysis, mathematical proofs</p>
+          </div>
         </div>
       </div>
     </section>
@@ -151,7 +199,7 @@
     <section id="contact" class="section section-alt">
       <div class="container contact-card">
         <p class="section-label">Contact</p>
-        <h2>Seeking internship, research, and project opportunities in data science, software engineering, and machine learning.</h2>
+        <h2>Seeking internship, research, and project opportunities in software engineering, data science, and machine learning.</h2>
         <p>Email: <a href="mailto:jie22shen@gmail.com">jie22shen@gmail.com</a></p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="mailto:jie22shen@gmail.com">Email Me</a>
