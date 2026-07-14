@@ -38,6 +38,17 @@ h1 { font-size: clamp(2.55rem, 5.6vw, 4.85rem); max-width: 940px; }
 h2 { font-size: clamp(1.75rem, 3vw, 3rem); }
 h3 { font-size: clamp(1.35rem, 2.2vw, 2rem); }
 
+.experience-role {
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
+.experience-company {
+  color: var(--text);
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+}
+
 .container { width: min(calc(100% - 2rem), var(--container)); margin: 0 auto; }
 .site-header {
   position: sticky;
