@@ -127,41 +127,44 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card featured">
-            <p class="tag-row">
-              <span>RAG</span>
-              <span>FastAPI</span>
-              <span>FAISS</span>
-              <span>Embeddings</span>
-              <span>LLM Architecture</span>
-            </p>
+        <article class="project-card featured">
+          <p class="tag-row">
+            <span>React</span>
+            <span>FastAPI</span>
+            <span>RAG</span>
+            <span>FAISS</span>
+            <span>SentenceTransformers</span>
+            <span>Ollama</span>
+          </p>
 
-            <h3>AI Study Assistant / Retrieval-Augmented Learning System</h3>
+          <h3>AI Study Assistant - Retrieval-Augmented Learning System</h3>
 
-            <p>
-              Built a Retrieval-Augmented Generation platform that lets users
-              query PDF lecture notes through semantic search, FAISS vector
-              retrieval, and interchangeable local or cloud-based language
-              model backends.
-            </p>
+          <p>
+            Built a full-stack Retrieval-Augmented Generation application that lets
+            users upload PDF documents and ask natural-language questions through
+            semantic retrieval and locally hosted or cloud-based language models.
+          </p>
 
-            <ul>
-              <li>
-                Developed an end-to-end RAG pipeline for PDF extraction,
-                document chunking, embedding generation, and context retrieval.
-              </li>
+          <ul>
+            <li>
+              Engineered an end-to-end RAG pipeline with PyMuPDF extraction,
+              overlapping document chunking, SentenceTransformers embeddings,
+              cosine-similarity retrieval, and FAISS vector indexing.
+            </li>
 
-              <li>
-                Implemented FAISS vector search with cosine-similarity retrieval
-                to surface relevant document chunks before answer generation.
-              </li>
+            <li>
+              Developed a responsive React/Vite frontend with PDF upload, document-ready
+              state, provider selection, loading and error handling, and asynchronous
+              integration with a FastAPI REST backend.
+            </li>
 
-              <li>
-                Designed an abstract LLM provider interface supporting both
-                local Ollama/Llama 3.2 and OpenAI backends.
-              </li>
-            </ul>
-          </article>
+            <li>
+              Designed a modular LLM provider abstraction supporting local
+              Ollama/Llama 3.2 inference and optional OpenAI integration without
+              modifying the underlying retrieval pipeline.
+            </li>
+          </ul>
+        </article>
 
           <article class="project-card">
             <p class="tag-row">

@@ -7,10 +7,12 @@
   <title>All Projects | Jie Shen</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Jie Shen</a>
+
       <nav class="nav">
         <a href="index.html#about">About</a>
         <a href="index.html#experience">Experience</a>
@@ -23,38 +25,75 @@
   </header>
 
   <main>
+
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Project archive</p>
-        <h1>Additional Major Projects</h1>
-        <p class="hero-text">A deeper look at my software engineering, machine learning, statistical modeling, simulation, and visualization projects.</p>
-        <a class="btn btn-secondary" href="index.html">← Back to Home</a>
+        <p class="eyebrow">Project Archive</p>
+
+        <h1>All Projects</h1>
+
+        <p class="hero-text">
+          A collection of software engineering, artificial intelligence,
+          machine learning, statistical modeling, simulation, and data
+          visualization projects.
+        </p>
+
+        <a class="btn btn-secondary" href="index.html">
+          ← Back to Home
+        </a>
       </div>
     </section>
 
     <section class="section">
       <div class="container project-list">
 
+        <!-- AI STUDY ASSISTANT -->
         <article class="project-detail card">
           <p class="tag-row">
-            <span>RAG</span>
+            <span>React</span>
             <span>FastAPI</span>
+            <span>RAG</span>
             <span>FAISS</span>
-            <span>Embeddings</span>
-            <span>LLM Architecture</span>
+            <span>Ollama</span>
           </p>
-          <h2>AI Study Assistant / Retrieval-Augmented Learning System</h2>
-          <p>Built a modular Retrieval-Augmented Generation platform that allows users to query PDF lecture notes using semantic search, FAISS vector retrieval, and interchangeable local or cloud-based language model backends.</p>
+
+          <h2>AI Study Assistant</h2>
+
+          <p>
+            Built a full-stack Retrieval-Augmented Generation application that
+            lets users upload PDF documents and ask natural-language questions
+            using semantic retrieval and interchangeable LLM providers.
+          </p>
+
           <ul>
-            <li>Developed an end-to-end RAG pipeline that extracts PDF text, chunks documents with overlap, generates semantic embeddings, and retrieves relevant context through vector similarity search.</li>
-            <li>Implemented FAISS-based vector retrieval with cosine similarity to surface the most relevant document chunks before answer generation.</li>
-            <li>Integrated local Llama 3.2 inference through Ollama, enabling offline question-answering without external API costs.</li>
-            <li>Designed an abstract LLM provider interface supporting interchangeable Ollama and OpenAI backends without changing retrieval or indexing logic.</li>
-            <li>Separated retrieval, indexing, and generation components using modular backend design principles to improve maintainability and future extensibility.</li>
-            <li>Designed the system to be document-agnostic, allowing users to index and query arbitrary PDF knowledge bases without retraining.</li>
+            <li>
+              Engineered an end-to-end RAG pipeline using PyMuPDF,
+              SentenceTransformers embeddings, overlapping document chunking,
+              and FAISS cosine-similarity retrieval.
+            </li>
+
+            <li>
+              Developed a responsive React/Vite frontend integrated with a
+              FastAPI REST backend for PDF upload, indexing, provider selection,
+              asynchronous requests, and answer generation.
+            </li>
+
+            <li>
+              Designed a modular LLM provider abstraction supporting local
+              Ollama/Llama 3.2 inference and optional OpenAI integration without
+              changing the underlying retrieval pipeline.
+            </li>
+
+            <li>
+              Added document-ready state management, loading and error feedback,
+              configurable API routing, and modular separation between API,
+              retrieval, and inference layers.
+            </li>
           </ul>
         </article>
 
+
+        <!-- NLP CLASSIFICATION -->
         <article class="project-detail card">
           <p class="tag-row">
             <span>Python</span>
@@ -63,158 +102,338 @@
             <span>Gradient Descent</span>
             <span>Feature Engineering</span>
           </p>
+
           <h2>Hybrid NLP &amp; Behavioral Classification Engine</h2>
-          <p>Designed an end-to-end machine learning system that combines natural language processing and structured behavioral survey features to classify artwork responses through a custom multiclass prediction pipeline.</p>
+
+          <p>
+            Built an end-to-end machine learning system combining natural
+            language and structured behavioral features for multiclass artwork
+            response classification.
+          </p>
+
           <ul>
-            <li>Implemented multiclass logistic regression from scratch using softmax activation, cross-entropy loss, vectorized gradient descent, and L2 regularization.</li>
-            <li>Engineered a hybrid feature representation combining Bag-of-Words text features with normalized numerical sentiment and behavioral survey variables.</li>
-            <li>Built a reusable preprocessing pipeline for text cleaning, vocabulary construction, feature normalization, missing-value handling, and structured feature engineering.</li>
-            <li>Developed a configurable training workflow supporting experiments across learning rate, regularization strength, vocabulary size, and optimization settings.</li>
-            <li>Created a reusable inference pipeline with model persistence, serialized preprocessing statistics, and automated prediction functionality to separate training from deployment.</li>
-            <li>Refactored the implementation into isolated preprocessing, feature engineering, training, inference, and evaluation modules to improve maintainability.</li>
+            <li>
+              Implemented multiclass logistic regression from scratch using
+              softmax activation, cross-entropy loss, vectorized gradient
+              descent, and L2 regularization.
+            </li>
+
+            <li>
+              Engineered a hybrid feature representation combining Bag-of-Words
+              text features with normalized numerical sentiment and behavioral
+              survey variables.
+            </li>
+
+            <li>
+              Built reusable preprocessing, training, evaluation, model
+              persistence, and inference pipelines supporting configurable
+              experimentation.
+            </li>
+
+            <li>
+              Refactored the system into modular preprocessing, feature
+              engineering, optimization, and prediction components for improved
+              maintainability.
+            </li>
           </ul>
         </article>
 
+
+        <!-- CANVAS -->
         <article class="project-detail card">
           <p class="tag-row">
             <span>Java</span>
             <span>JavaFX</span>
-            <span>Object-Oriented Design</span>
-            <span>MVC-Style Architecture</span>
-            <span>Factory Pattern</span>
+            <span>OOP</span>
+            <span>MVC</span>
+            <span>Design Patterns</span>
           </p>
-          <h2>Interactive Canvas Drawing Application</h2>
-          <p>Built a JavaFX desktop drawing application for creating, editing, saving, and reloading graphical drawings through a real-time, event-driven interface. The project emphasizes extensible object-oriented architecture, MVC-style separation of concerns, polymorphic shape rendering, and maintainable software design.</p>
+
+          <h2>Interactive Canvas Studio</h2>
+
+          <p>
+            Developed a JavaFX desktop drawing application with real-time
+            rendering, extensible shape tools, editing workflows, persistence,
+            and MVC-style software architecture.
+          </p>
+
           <ul>
-            <li>Designed a 3-layer MVC-style architecture separating application state, rendering logic, and user input handling across model, view, and controller components.</li>
-            <li>Implemented an extensible polymorphic shape framework supporting 8 drawing tools, including circles, rectangles, squares, ovals, triangles, polylines, freehand sketches, and waves.</li>
-            <li>Used factory-based shape creation to centralize drawing tool construction and make new shapes easier to add without major changes to existing code.</li>
-            <li>Developed a real-time interaction pipeline that translated mouse events into responsive graphical updates for drawing, selecting, editing, and manipulating canvas objects.</li>
-            <li>Built editing and workflow features including undo/redo, cut/copy/paste, color selection, fill styles, line thickness controls, and 2 display modes for light and dark themes.</li>
-            <li>Implemented custom .canvas file persistence, allowing users to create, save, reopen, and manage multiple drawing files through native JavaFX file dialogs.</li>
-            <li>Practiced an agile-style development workflow using sprint backlogs, user stories, bug tracking, daily scrum notes, and architecture documentation.</li>
+            <li>
+              Designed an MVC-style architecture separating application state,
+              rendering logic, and event-driven user interaction.
+            </li>
+
+            <li>
+              Implemented a polymorphic drawing framework supporting circles,
+              rectangles, squares, ovals, triangles, polylines, freehand
+              sketches, and waves.
+            </li>
+
+            <li>
+              Built undo/redo, cut/copy/paste, color and stroke controls,
+              light/dark themes, and custom drawing-file persistence.
+            </li>
+
+            <li>
+              Used factory-based shape creation and modular components to make
+              the application easier to extend with additional drawing tools.
+            </li>
           </ul>
         </article>
 
+
+        <!-- OTHELLO -->
         <article class="project-detail card">
           <p class="tag-row">
             <span>Java</span>
-            <span>Object-Oriented Design</span>
+            <span>OOP</span>
             <span>Strategy Pattern</span>
             <span>JUnit</span>
             <span>Game AI</span>
           </p>
+
           <h2>Othello Game Engine with AI Decision Systems</h2>
-          <p>Implemented a modular Java Othello engine supporting human and AI gameplay through reusable game-state, player, controller, and strategy abstractions.</p>
+
+          <p>
+            Built a modular Java Othello engine supporting human and AI gameplay
+            through reusable game-state, player, controller, and strategy
+            abstractions.
+          </p>
+
           <ul>
-            <li>Implemented core Othello mechanics including legal move validation, turn management, board-state updates, score tracking, and dynamic piece-flipping logic.</li>
-            <li>Applied the Strategy Design Pattern to decouple player behavior from engine logic, enabling interchangeable Human, Random AI, and Greedy AI decision models.</li>
-            <li>Designed reusable object-oriented components for board management, move representation, player control, and game orchestration.</li>
-            <li>Implemented AI decision strategies using random selection and greedy move evaluation to support automated gameplay and AI-vs-AI simulations.</li>
-            <li>Integrated JUnit testing and edge-case validation to verify move legality, board-state transitions, game termination, and piece-flipping correctness.</li>
-            <li>Structured the codebase to support multiple match configurations, including Human vs Human, Human vs AI, and AI vs AI.</li>
+            <li>
+              Implemented legal move validation, turn management, board-state
+              updates, scoring, game termination, and dynamic piece-flipping
+              logic.
+            </li>
+
+            <li>
+              Applied the Strategy Pattern to support interchangeable Human,
+              Random AI, and Greedy AI player behaviors.
+            </li>
+
+            <li>
+              Structured reusable components for board management, moves,
+              players, and game orchestration across multiple match
+              configurations.
+            </li>
+
+            <li>
+              Added JUnit tests and edge-case validation for game mechanics,
+              state transitions, and move correctness.
+            </li>
           </ul>
         </article>
 
+
+        <!-- REGRESSION -->
         <article class="project-detail card">
           <p class="tag-row">
             <span>Python</span>
             <span>scikit-learn</span>
-            <span>Ridge</span>
-            <span>Lasso</span>
-            <span>Elastic Net</span>
-            <span>RMSE</span>
+            <span>Regression</span>
+            <span>Regularization</span>
+            <span>Cross-Validation</span>
           </p>
+
           <h2>High-Dimensional Regression Modeling Pipeline</h2>
-          <p>Constructed a reproducible machine learning workflow for high-dimensional regression, regularization, feature selection, model comparison, and generalization performance evaluation.</p>
-          <ul>
-            <li>Built an end-to-end regression modeling pipeline using Python and scikit-learn to evaluate predictive performance across high-dimensional feature spaces.</li>
-            <li>Implemented and compared OLS, Ridge, Lasso, and Elastic Net models using cross-validation and RMSE-based evaluation.</li>
-            <li>Applied feature standardization and regularization to reduce overfitting and improve generalization across 112 input predictors.</li>
-            <li>Reduced the effective feature space from 112 predictors to 24 informative variables using L1-based feature selection.</li>
-            <li>Generated model comparison outputs, coefficient analysis, shrinkage visualizations, and residual diagnostics to explain model behavior and performance tradeoffs.</li>
-            <li>Designed the workflow for reproducible experimentation, supporting automated training, evaluation, metadata tracking, and final inference output generation.</li>
-          </ul>
-        </article>
 
-        <article class="project-detail card">
-          <p class="tag-row">
-            <span>Python</span>
-            <span>Object-Oriented Design</span>
-            <span>Event-Driven Simulation</span>
-            <span>Priority Queue</span>
-            <span>Data Analysis</span>
+          <p>
+            Developed a reproducible machine learning workflow for
+            high-dimensional regression, feature selection, model comparison,
+            and generalization-performance evaluation.
           </p>
-          <h2>Ride-Sharing Dispatch Optimization Simulator</h2>
-          <p>Developed an event-driven ride-sharing simulation platform that models rider-driver interactions, evaluates dispatch behavior, and analyzes system performance through metrics collection and optimization-focused experimentation.</p>
+
           <ul>
-            <li>Implemented a priority-queue simulation engine to process rider requests, driver availability, pickups, drop-offs, and cancellations in chronological order.</li>
-            <li>Designed modular object-oriented components for riders, drivers, dispatchers, event handlers, locations, and performance monitoring.</li>
-            <li>Built grid-based dispatch logic using Manhattan distance to assign riders to available drivers and simulate urban transportation workflows.</li>
-            <li>Designed configurable simulation settings for dispatch strategies, demand patterns, cancellation behavior, and benchmarking experiments.</li>
-            <li>Integrated analytics reporting to track rider wait time, driver travel distance, ride distance, driver utilization, and overall system performance.</li>
-            <li>Structured the platform for future expansion through interchangeable dispatch strategies, CSV exports, benchmarking workflows, and visualization modules.</li>
+            <li>
+              Compared OLS, Ridge, Lasso, and Elastic Net models using
+              cross-validation and RMSE-based performance evaluation.
+            </li>
+
+            <li>
+              Applied feature standardization and regularization across 112
+              predictors to reduce overfitting and improve generalization.
+            </li>
+
+            <li>
+              Reduced the effective feature space to 24 informative predictors
+              using L1-based feature selection.
+            </li>
+
+            <li>
+              Generated coefficient analyses, shrinkage visualizations,
+              residual diagnostics, and reproducible experiment outputs.
+            </li>
           </ul>
         </article>
 
+
+        <!-- RIDE SHARING -->
         <article class="project-detail card">
           <p class="tag-row">
             <span>Python</span>
-            <span>Statistical Modeling</span>
-            <span>Regression Analysis</span>
+            <span>OOP</span>
+            <span>Simulation</span>
+            <span>Priority Queue</span>
+            <span>Analytics</span>
+          </p>
+
+          <h2>Ride-Sharing Dispatch Optimization Simulator</h2>
+
+          <p>
+            Built an event-driven ride-sharing simulation that models
+            rider-driver interactions, dispatch behavior, and transportation
+            system performance.
+          </p>
+
+          <ul>
+            <li>
+              Implemented a priority-queue event engine for rider requests,
+              driver availability, pickups, drop-offs, and cancellations.
+            </li>
+
+            <li>
+              Designed modular components for riders, drivers, dispatchers,
+              locations, event handling, and performance monitoring.
+            </li>
+
+            <li>
+              Developed grid-based dispatch logic using Manhattan distance to
+              assign riders to available drivers.
+            </li>
+
+            <li>
+              Collected rider wait time, driver utilization, travel distance,
+              ride distance, and other metrics for strategy evaluation.
+            </li>
+          </ul>
+        </article>
+
+
+        <!-- SOCIAL MEDIA ANALYTICS -->
+        <article class="project-detail card">
+          <p class="tag-row">
+            <span>Python</span>
+            <span>Statistics</span>
+            <span>Regression</span>
             <span>ANOVA</span>
             <span>Data Analytics</span>
           </p>
+
           <h2>Social Media Behaviour Analytics &amp; Predictive Modeling System</h2>
-          <p>Constructed an end-to-end analytics workflow combining survey-based data collection, statistical inference, and predictive modeling to analyze relationships between social media usage and student well-being.</p>
+
+          <p>
+            Built an analytics workflow combining survey data, statistical
+            inference, and predictive modeling to study relationships between
+            social media behavior and student well-being.
+          </p>
+
           <ul>
-            <li>Designed data preprocessing workflows for participant survey responses, structured behavioral variables, and student well-being indicators.</li>
-            <li>Conducted exploratory data analysis, hypothesis testing, ANOVA, simple linear regression, and multiple linear regression to identify statistically meaningful behavioral patterns.</li>
-            <li>Analyzed relationships between social media usage, sleep behavior, content interaction, and mental health indicators across student response groups.</li>
-            <li>Built predictive models to estimate well-being and engagement outcomes using engineered behavioral features and evaluation metrics.</li>
-            <li>Produced reproducible statistical reports and publication-quality visualizations translating analytical findings into clear, interpretable conclusions.</li>
-            <li>Implemented reusable analysis workflows supporting scalable experimentation, model comparison, and statistical communication.</li>
+            <li>
+              Developed preprocessing and exploratory analysis workflows for
+              survey responses, behavioral variables, and well-being indicators.
+            </li>
+
+            <li>
+              Applied hypothesis testing, ANOVA, simple linear regression, and
+              multiple regression to identify meaningful behavioral patterns.
+            </li>
+
+            <li>
+              Built predictive models using engineered behavioral features and
+              evaluated relationships involving social media usage, sleep, and
+              content interaction.
+            </li>
+
+            <li>
+              Produced reproducible statistical reports and interpretable
+              visualizations communicating analytical findings.
+            </li>
           </ul>
         </article>
 
+
+        <!-- TELECOM -->
         <article class="project-detail card">
           <p class="tag-row">
             <span>Python</span>
-            <span>Object-Oriented Design</span>
+            <span>OOP</span>
             <span>Data Processing</span>
-            <span>Pygame Visualization</span>
+            <span>Pygame</span>
             <span>Testing</span>
           </p>
+
           <h2>Telecommunications Call Analytics &amp; Visualization Platform</h2>
-          <p>Built an object-oriented telecommunications analytics platform that processes customer call records, applies dynamic filtering and billing logic, and visualizes call activity patterns through an interactive geographic interface.</p>
+
+          <p>
+            Developed an object-oriented telecommunications system for
+            processing call records, applying billing and filtering logic, and
+            visualizing geographic communication patterns.
+          </p>
+
           <ul>
-            <li>Designed a modular architecture using inheritance, composition, and abstraction to model customers, call events, phone lines, contracts, and billing systems.</li>
-            <li>Implemented data ingestion and transformation pipelines that converted structured JSON call records into object-oriented domain models for downstream analysis.</li>
-            <li>Developed customizable filtering algorithms supporting customer-based, duration-based, and location-based query operations for interactive exploration of call records.</li>
-            <li>Built an interactive Pygame geographic visualization engine that maps call activity across Toronto and allows users to investigate communication patterns visually.</li>
-            <li>Integrated multiple contract models and automated billing calculations to support usage rules, pricing policies, and monthly call summaries.</li>
-            <li>Applied unit testing and debugging workflows to resolve edge cases involving filtering behavior, billing rules, and event-handling logic.</li>
+            <li>
+              Modeled customers, call events, phone lines, contracts, and
+              billing systems using inheritance, composition, and abstraction.
+            </li>
+
+            <li>
+              Built JSON ingestion and filtering pipelines supporting
+              customer-, duration-, and location-based analysis.
+            </li>
+
+            <li>
+              Developed an interactive Pygame visualization that maps call
+              activity across Toronto.
+            </li>
+
+            <li>
+              Implemented multiple contract and billing models with testing for
+              filtering, billing, and event-handling edge cases.
+            </li>
           </ul>
         </article>
 
+
+        <!-- TREEMAP -->
         <article class="project-detail card">
           <p class="tag-row">
             <span>Python</span>
             <span>Pygame</span>
-            <span>Recursive Algorithms</span>
-            <span>Object-Oriented Design</span>
-            <span>Data Visualization</span>
+            <span>Recursion</span>
+            <span>OOP</span>
+            <span>Visualization</span>
           </p>
+
           <h2>Interactive Treemap Visualization System</h2>
-          <p>Created an interactive visualization platform that models and explores hierarchical datasets through dynamically generated treemap representations, enabling intuitive analysis of large structured data systems.</p>
+
+          <p>
+            Built an interactive visualization system for exploring
+            hierarchical datasets through dynamically generated treemap
+            representations.
+          </p>
+
           <ul>
-            <li>Developed a recursive tree-based architecture to represent hierarchical data, supporting datasets such as file systems and categorized research collections.</li>
-            <li>Implemented a recursive treemap layout algorithm that allocated screen space according to node weights, visually representing relative size across hierarchical structures.</li>
-            <li>Built an interactive Pygame interface enabling users to navigate, expand, collapse, and explore parent-child relationships in real time.</li>
-            <li>Applied object-oriented design principles including inheritance and abstraction to create reusable components for multiple dataset types.</li>
-            <li>Designed recursive traversal and update operations for hierarchy manipulation while maintaining consistency across parent-child relationships.</li>
-            <li>Structured the system to support additional datasets without modifying the core visualization logic.</li>
-            <li>Integrated event-driven interaction handling and state management to maintain responsive visualization performance.</li>
+            <li>
+              Designed a recursive tree-based architecture supporting
+              hierarchical datasets such as file systems and categorized
+              research collections.
+            </li>
+
+            <li>
+              Implemented a recursive treemap layout algorithm that allocates
+              screen space according to node weights.
+            </li>
+
+            <li>
+              Built an interactive Pygame interface for navigating, expanding,
+              collapsing, and exploring parent-child relationships.
+            </li>
+
+            <li>
+              Used inheritance and abstraction to support additional dataset
+              types without changing the core visualization engine.
+            </li>
           </ul>
         </article>
 
